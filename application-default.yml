@@ -7,7 +7,7 @@ eureka:
     instance:
       instance-id: ${EUREKA_INSTANCE_ID:${random.value}}
 spring:
-  main:
+  security:
     oauth2:
       resourceserver:
         jwt:
