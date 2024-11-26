@@ -1,0 +1,22 @@
+spring.cloud:
+  gateway:
+    routes:
+      - id: Course-Service
+        uri: lb://COURSE-SERVICE
+        predicates:
+          - "Path=/api/courses/**"
+
+      - id: University-Service
+        uri: lb://UNIVERSITY-SERVICE
+        predicates:
+          - "Path=/api/universities/**"
+
+      - id: Education-Service
+        uri: lb://EDUCATION-SERVICE
+        predicates:
+          - "Path=/api/education/**"
+
+      - id: Authentication-Service
+        uri: lb://AUTHENTICATION-SERVICE
+        predicates:
+          - "Path=/api/auth/**"

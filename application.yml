@@ -1,1 +1,16 @@
 from.config.application: from_config_application_yml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8888/realms/test_security_realm/protocol/openid-connect/certs
+          issuer-uri: http://localhost:8888/realms/test_security_realm
+logging:
+  level:
+    root: info
+    org.andarworld: debug
