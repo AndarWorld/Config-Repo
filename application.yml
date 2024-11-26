@@ -1,1 +1,3 @@
-from.config.application=from_config_application_yml
+from:
+  config:
+    application: from_config_application_yml
