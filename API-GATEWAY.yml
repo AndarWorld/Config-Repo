@@ -1,3 +1,4 @@
+from.config.server: "HI FROM CONFIG SERVER"
 spring:
   cloud:
     gateway:
