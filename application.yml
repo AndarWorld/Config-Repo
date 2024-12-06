@@ -16,4 +16,4 @@ spring:
 logging:
   level:
     root: info
-    org.andarworld: debug
+    org.andarworld: info
